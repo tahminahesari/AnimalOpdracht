@@ -1,3 +1,5 @@
+package nl.novi.javaprogrammeren;
+
 import nl.novi.javaprogrammeren.overerving.Animal;
 
 public class Lion extends Animal {
@@ -8,7 +10,16 @@ public class Lion extends Animal {
 
     @Override
     public void sound() {
-        System.out.println("gromt");
+        System.out.println("de leeuw genaamd " + super.name + " gromt");
+    }
+
+  @Override
+  //food dat is een parameter (je kan een naam geven die je zelf maar wil)
+  //je weet niet wat de waarde is, je weet het alleen dat een String is. Het kan zebra zijn of cow of iets anders.
+  //Wat () staat bij defineren van een methode zijn altijd parameters
+    public void eat(String food) {
+
+        System.out.println("Lion" + super.name + " is eating " + food );
     }
 
     //super() methoden aangeroepen met "String name en boolean isFemale"

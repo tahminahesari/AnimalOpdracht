@@ -1,3 +1,5 @@
+package nl.novi.javaprogrammeren;
+
 import nl.novi.javaprogrammeren.overerving.Animal;
 
 public class Dog extends Animal {

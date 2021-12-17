@@ -1,33 +1,19 @@
+package nl.novi.javaprogrammeren;
+
 import nl.novi.javaprogrammeren.overerving.Animal;
 
-public class Tiger extends Animal {
+public class Wolf extends Animal {
     public String cageName;
     public String lastFedDay;
     public String countryOfOrigin;
-    public int stripes;
-//    public String meat;
+    public String packName;
 
-    public Tiger(String name, boolean isFemale, String cageName, String lastFedDay, String countryOfOrigin, int stripes) {
-
+    public Wolf(String name, boolean isFemale, String cageName, String lastFedDay, String countryOfOrigin, String packName) {
         super(name, isFemale);
-        this.name = name;
         this.cageName = cageName;
         this.lastFedDay = lastFedDay;
-        this.stripes = stripes;
-//        this.meat = meat;
-    }
-
-    @Override
-    public void sound() {
-        System.out.println("Roar");
-
-      //  waarom kan ik niet overschrijven
-      // mag ik meerderen @Override gebruiken in een klasse?
-//    @Override
-//    public void eat() {
-//            System.out.println("I eat " + meat  );
-//        }
-
+        this.countryOfOrigin = countryOfOrigin;
+        this.packName = packName;
     }
 
     public String getCageName() {
@@ -54,11 +40,11 @@ public class Tiger extends Animal {
         this.countryOfOrigin = countryOfOrigin;
     }
 
-   public int getStripes() {
-        return stripes;
-   }
-   public void setStripes(int stripes) {
-        this.stripes = stripes;
-   }
-}
+    public String getPackName() {
+        return packName;
+    }
 
+    public void setPackName(String packName) {
+        this.packName = packName;
+    }
+}
